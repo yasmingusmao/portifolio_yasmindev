@@ -1,0 +1,285 @@
+/* ESTILOS GERAIS */
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #CEC5C2;
+}
+
+.section-title {
+    font-family: "Anton", sans-serif;
+    color: #251E1D;
+}
+
+.text-colored {
+    color: #D9A134
+}
+
+.btn-primary {
+    background-color: #D9A134;
+    color: #B13169;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color:  #58381A;
+    color: #D9A134;
+    border: none;
+}
+
+.btn-secondary:hover {
+    color:  #D9A134;
+}
+
+/* cabeçalho */
+
+.navbar {
+    background-color: #251E1D;
+}
+
+.nav .nav-link.active {
+    background-color: #CEC5C2 ;
+    color: #D9A134;
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color: #D9A134;
+}
+
+.navbar-brand {
+    font-family: "Anton", sans-serif;
+}
+
+.navbar-toggler {
+    background-color: #D9A134;
+}
+
+.nav-habilidades .nav-link.active,
+#contato button {
+    background-color: #251E1D;
+    color: #CEC5C2;
+}
+
+/* CAROUSEL */
+
+@media (min-width: 768px) {
+    .carousel-inner {
+        height: 650px; /* Altura para DESKTOP */
+    }
+
+    .carousel-caption {
+        padding-bottom: 10rem;
+    }
+}
+
+/*SEÇÃO SOBRE */
+#sobre {
+    background-color: #251E1D;
+    color: #CEC5C2
+}
+
+#sobre .section-title {
+    color: #CEC5C2;
+}
+
+.icones {
+    padding-left: 0;
+    gap: 16px; /* Espaçamento um pouco menor para mobile */
+    margin-top: 24px;
+}
+
+.icones li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+.icones i {
+    font-size: 1.8rem;
+    color: #D9A134;
+}
+
+/* Para telas maiores */
+@media (min-width: 768px) {
+    .icones {
+        gap: 20px;
+    }
+
+    .icones li {
+        font-size: 1.1rem;
+    }
+
+    .icones i {
+        font-size: 2rem;
+    }
+}
+
+
+/* SEÇÃO PROJETOS */
+
+.card-footer {
+    background-color: #B13169;
+    border-color: #CEC5C2;
+}
+
+
+/* SEÇÃO HABILIDADES */
+
+aside {
+    margin: 0 auto 1rem;
+}
+
+#habilidades img {
+    max-width: 60px;  
+    margin: 0 auto 1rem; /* Centraliza a imagem e adiciona uma margem inferior */
+}
+
+#habilidades .div-habilidades {
+    margin-bottom: 1.5rem; /* Adiciona um espaço abaixo de cada ícone no mobile */
+}
+
+/* Telas Maiores */
+@media (min-width: 768px) {
+    #habilidades img {
+        max-width: 80px;
+    }
+
+    #habilidades .div-habilidades {
+        margin-bottom: 0;
+    }
+}
+
+
+/* SEÇÃO CONTATO */
+
+
+#contato button {
+    background-color: #251E1D;
+    color: #CEC5C2;
+    width: 100%;
+}
+
+#contato button:hover {
+    background-color: #D9A134;
+}
+
+.social-links {
+    padding-left: 0;
+    text-align: center;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    #contato button {
+        width: auto; /* Largura automática para o botão no desktop */
+    }
+
+    .social-links {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .social-links a {
+        font-size: 1.4rem; /* Tamanho original do ícone */
+        margin: 5px; /* Remove a margem extra */
+    }
+}
+
+/*  FOOTER */
+
+.footer-container {
+    position: relative; /* Necessário para o posicionamento da onda */
+    background-color: #251E1D; /* Cor de fundo principal do footer */
+    color: #CEC5C2; 
+}
+
+.onda-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg ); /* Inverte a onda para apontar para cima */
+}
+
+.onda-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10rem; /* Altura da onda */
+}
+
+.onda-divider .shape-fill {
+    fill: #CEC5C2; /* Cor da onda (cor de fundo da sua página) */
+}
+
+.footer-content {
+    padding: 12rem 0 2rem 0;
+}
+
+.footer-title {
+    font-family: "Anton", sans-serif;
+    color: #D9A134;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-subtitle {
+    font-size: 1.2rem;
+    color: #CEC5C2;
+}
+
+.social-links-footer {
+    padding-left: 0;
+    list-style: none;
+}
+
+.social-links-footer li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.social-links-footer a {
+    color: #CEC5C2;
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links-footer a:hover {
+    color: #D9A134; /* Muda para a cor de destaque no hover */
+    transform: scale(1.2); /* Efeito de crescimento sutil */
+}
+
+.footer-copyright {
+    background-color: #1a1514;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+    .footer-content {
+        padding-top: 8rem; /* Menos padding no mobile */
+    }
+
+    .footer-title {
+        font-size: 2rem; /* Fonte menor no mobile */
+    }
+
+    .onda-divider svg {
+        height: 5rem; /* Onda mais baixa no mobile */
+    }
+}
